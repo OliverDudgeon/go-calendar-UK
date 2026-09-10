@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
+$originalTimezone = date_default_timezone_get();
+
 use Console\Entities\CalendarManifest;
 use Console\Entities\LeekDuckEvent;
 
@@ -82,5 +84,7 @@ $command = new Symfony\Component\Console\Tester\CommandTester(new Console\Comman
 foreach (['BST', '+01:00', 'GMT+1', 'invalid', ''] as $timezone) {
     check($command->execute(['--timezone' => $timezone]) === 2, 'Reject non-IANA timezone before fetching data');
 }
+
+check(date_default_timezone_get() === $originalTimezone, 'Serialization must restore the PHP default timezone');
 
 echo "Time-zone regression tests passed.\n";

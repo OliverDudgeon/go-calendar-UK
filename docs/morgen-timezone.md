@@ -24,11 +24,14 @@ The optional `gen --timezone=Europe/London` output provides a UK-specific
 workaround: unzoned source timestamps are interpreted as London wall time and
 Spatie emits `TZID` and `VTIMEZONE` information. Timestamps with explicit source
 offsets retain their instant. The default remains the global floating feed.
-The locked Spatie 2.6 serializer adds a UTC `Z` to transition wall times when
-PHP defaults to UTC. `ZonedCalendar` removes that suffix only from `DTSTART`
-inside `VTIMEZONE`, as required by RFC 5545 section 3.8.2.4. Event instants and
-`DTSTAMP` remain untouched. The regression checks cover the actual spring and
-autumn transition times and offsets.
+The locked Spatie 2.6 serializer constructs transition wall times using PHP's
+default timezone. UTC produces a `Z` suffix; a DST-observing default can alter
+transition arithmetic. `ZonedCalendar` scopes serialization to the existing
+DST-free, non-UTC Reykjavik workaround and restores PHP's default in `finally`.
+This keeps transition `DTSTART` local, as required by RFC 5545 section 3.8.2.4,
+without changing the explicit London zones on events or UTC `DTSTAMP` values.
+Regression checks cover spring and autumn transitions under UTC, London, and
+New York PHP defaults.
 
 All-day dates retain the generator's existing date-only and exclusive-end policy.
 
