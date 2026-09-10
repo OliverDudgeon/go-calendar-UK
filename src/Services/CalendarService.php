@@ -41,7 +41,7 @@ class CalendarService
      *
      * @param array<LeekDuckEventType> $eventTypes
      */
-    public static function createCalendars(array $eventTypes): void
+    public static function createCalendars(array $eventTypes, ?string $timezone = null): void
     {
         if (! empty(self::$manifest)) {
             return;
@@ -49,7 +49,8 @@ class CalendarService
 
         foreach ($eventTypes as $eventType) {
             self::$manifest[$eventType->key] = CalendarManifest::create(
-                eventType: $eventType
+                eventType: $eventType,
+                timezone: $timezone
             );
         }
     }
@@ -75,7 +76,7 @@ class CalendarService
      *
      * @param array<LeekDuckEvent> $events
      */
-    public static function addEventsToCalendar(array $events, OutputService $output): void
+    public static function addEventsToCalendar(array $events, OutputService $output, ?string $timezone = null): void
     {
         foreach ($events as $event) {
             $output->msg(
@@ -90,7 +91,7 @@ class CalendarService
 
             CalendarService::addEventToCalendar(
                 eventType: $event->type,
-                event: $event->asCalendarEvent()
+                event: $event->asCalendarEvent(timezone: $timezone)
             );
 
             $output->msg(

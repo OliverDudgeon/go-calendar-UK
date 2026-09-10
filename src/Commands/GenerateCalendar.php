@@ -10,6 +10,7 @@ use Console\Services\EventService;
 use Console\Services\OutputService;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 class GenerateCalendar extends Command
@@ -23,6 +24,7 @@ class GenerateCalendar extends Command
     {
         $this
             ->setName(name: 'gen')
+            ->addOption('timezone', null, InputOption::VALUE_REQUIRED, 'Interpret local event times in an IANA zone, e.g. Europe/London; omit for the global floating feed')
             ->setDescription(description: 'Grabs the latest data from Leek Duck (ScrapedDuck) and generates the iCal calendar')
             ->setHelp(help: 'Grabs the latest data from Leek Duck (ScrapedDuck) and generates the iCal calendar');
     }
@@ -32,6 +34,14 @@ class GenerateCalendar extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        $timezone = $input->getOption('timezone');
+
+        if ($timezone !== null && ! in_array($timezone, \DateTimeZone::listIdentifiers(), true)) {
+            $output->writeln('<error>Use an IANA timezone such as Europe/London.</error>');
+
+            return Command::INVALID;
+        }
+
         // Parent constructor doesn't get passed the shared output interface :(
         $this->output = new OutputService(output: $output);
 
@@ -58,7 +68,8 @@ class GenerateCalendar extends Command
         );
 
         CalendarService::createCalendars(
-            eventTypes: EventService::fetchEventTypes()
+            eventTypes: EventService::fetchEventTypes(),
+            timezone: $timezone
         );
 
         $this->output->msg(
@@ -73,7 +84,8 @@ class GenerateCalendar extends Command
 
         CalendarService::addEventsToCalendar(
             events: $events,
-            output: $this->output
+            output: $this->output,
+            timezone: $timezone
         );
 
         $this->output->msg(

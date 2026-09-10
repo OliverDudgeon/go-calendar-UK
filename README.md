@@ -68,6 +68,39 @@ Hopefully the code should be clear enough to be self documenting, although I'm n
 alone, given the relative size of the project and associated debug output lines enclosing code blocks, it should be fine
 in this circumstance. If the project grows any larger, then I'll produce the appropriate documentation to support it.
 
+## UK output for Morgen
+
+To generate a UK-specific feed with explicit `Europe/London` times:
+
+```shell
+docker compose run --rm -T gocal gen --timezone=Europe/London
+```
+
+With PHP 8.2+ and Composer installed locally, use `composer install` followed by
+`php bin/gocal gen --timezone=Europe/London`.
+
+The option interprets unzoned event timestamps as London wall-clock times and
+includes `TZID` and `VTIMEZONE` data for GMT/BST transitions. Explicitly zoned
+source timestamps retain their original instant. All-day dates remain date-only.
+The calendar name includes `[Europe/London]` to distinguish the UK feed.
+
+Output uses the existing `dist/` filenames. Host these files at your own URL and
+subscribe to that URL in Morgen. The upstream `othyn/go-calendar` release URL
+continues to serve the global feed. For an automated UK fork, add
+`--timezone=Europe/London` to the generation command in its calendar workflow;
+configure its hosting/manifest links for that fork before publishing.
+
+Omitting `--timezone` preserves the existing global floating-time behavior.
+A UK feed describes UK instants, so users elsewhere may see different local times.
+See [the investigation notes](docs/morgen-timezone.md) for evidence and the
+remaining Morgen client verification step.
+
+Run the offline regression checks with `composer test`, or:
+
+```shell
+docker compose run --rm -T --entrypoint composer gocal test
+```
+
 ## A note on time zones and local time
 
 This was a pain in the arse to solve, and I went through a lot of iterations coming up with a working solution. I had to

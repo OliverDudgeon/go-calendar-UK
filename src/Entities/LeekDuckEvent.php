@@ -125,11 +125,17 @@ class LeekDuckEvent
     /**
      * Converts a Leek Duck event to a calendar event.
      */
-    public function asCalendarEvent(string $timezone = CalendarService::TIMEZONE): Event
+    public function asCalendarEvent(?string $timezone = null): Event
     {
         $this->changeTimezone(
-            timezone: $timezone
+            timezone: $timezone ?? CalendarService::TIMEZONE
         );
+
+        if ($timezone !== null && ! $this->isFullDay) {
+            // Explicit source offsets describe instants; unzoned dates are local wall times.
+            $this->startDate->setTimezone($timezone);
+            $this->endDate->setTimezone($timezone);
+        }
 
         $calendarEvent = Event::create()
             ->uniqueIdentifier(
@@ -139,7 +145,7 @@ class LeekDuckEvent
                 name: $this->title,
             )
             ->description(
-                description: $this->description
+                description: $timezone === null ? $this->description : 'Starts at ' . $this->startDate->format('H:i') . ', ends at ' . $this->endDate->format('H:i') . ".\n\n{$this->link}"
             )
             ->url(
                 url: $this->link
@@ -156,8 +162,11 @@ class LeekDuckEvent
             )
             ->endsAt(
                 ends: $this->isFullDay ? $this->endDate->copy()->addDay() : $this->endDate
-            )
-            ->withoutTimezone();
+            );
+
+        if ($timezone === null || $this->isFullDay) {
+            $calendarEvent->withoutTimezone();
+        }
 
         if ($this->isFullDay) {
             $calendarEvent->fullDay();

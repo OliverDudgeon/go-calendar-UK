@@ -24,6 +24,7 @@
     ]
   },
   "scripts": {
+    "test": "@php tests/timezone.php",
     "php-cs-fixer": "./vendor/bin/php-cs-fixer fix --allow-risky yes --config ./.php-cs-fixer.dist.php"
   }
 }

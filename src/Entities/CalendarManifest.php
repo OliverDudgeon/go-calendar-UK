@@ -18,22 +18,26 @@ class CalendarManifest
     /**
      * Create a new CalendarManifest object.
      */
-    public static function create(LeekDuckEventType $eventType): self
+    public static function create(LeekDuckEventType $eventType, ?string $timezone = null): self
     {
-        return new self(
+        $manifest = new self(
             eventType: $eventType,
-            calendar: Calendar::create()
+            calendar: ($timezone === null ? Calendar::create() : new ZonedCalendar())
                 ->name(
-                    name: 'GO Calendar - ' . $eventType->title . ($eventType->title == CalendarService::EVERYTHING_CALENDAR_NAME ? '' : ' (' . acronymForEventType($eventType) . ')')
+                    name: 'GO Calendar - ' . $eventType->title . ($eventType->title == CalendarService::EVERYTHING_CALENDAR_NAME ? '' : ' (' . acronymForEventType($eventType) . ')') . ($timezone === null ? '' : " [{$timezone}]")
                 )
                 ->description(
-                    description: 'All Pokémon GO ' . ($eventType->title == CalendarService::EVERYTHING_CALENDAR_NAME ? '' : "{$eventType->title} ") . 'events, in your local time, auto-updated and sourced from Leek Duck.'
+                    description: 'All Pokémon GO ' . ($eventType->title == CalendarService::EVERYTHING_CALENDAR_NAME ? '' : "{$eventType->title} ") . 'events, in ' . ($timezone ?? 'your local time') . ', auto-updated and sourced from Leek Duck.'
                 )
                 ->refreshInterval(
                     minutes: 1440 // 1 day
                 )
-                ->withoutAutoTimezoneComponents()
-                ->withoutTimezone()
         );
+
+        if ($timezone === null) {
+            $manifest->calendar->withoutAutoTimezoneComponents()->withoutTimezone();
+        }
+
+        return $manifest;
     }
 }
