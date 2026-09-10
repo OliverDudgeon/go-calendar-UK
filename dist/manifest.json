@@ -1,54 +1,54 @@
 {
     "community_day": {
         "name": "Community Day",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__community_day.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__community_day.ics"
     },
     "event": {
         "name": "Event",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__event.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__event.ics"
     },
     "everything": {
         "name": "Everything",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal.ics"
     },
     "go_battle_league": {
         "name": "GO Battle League",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__go_battle_league.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__go_battle_league.ics"
     },
     "go_pass": {
         "name": "GO Pass",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__go_pass.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__go_pass.ics"
     },
     "max_battles": {
         "name": "Max Battles",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__max_battles.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__max_battles.ics"
     },
     "max_mondays": {
         "name": "Max Mondays",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__max_mondays.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__max_mondays.ics"
     },
     "pokemon_spotlight_hour": {
         "name": "Pokémon Spotlight Hour",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__pokemon_spotlight_hour.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__pokemon_spotlight_hour.ics"
     },
     "raid_battles": {
         "name": "Raid Battles",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__raid_battles.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__raid_battles.ics"
     },
     "raid_day": {
         "name": "Raid Day",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__raid_day.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__raid_day.ics"
     },
     "raid_hour": {
         "name": "Raid Hour",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__raid_hour.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__raid_hour.ics"
     },
     "season": {
         "name": "Season",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__season.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__season.ics"
     },
     "wild_area": {
         "name": "Wild Area",
-        "url": "github.com\/othyn\/go-calendar\/releases\/latest\/download\/gocal__wild_area.ics"
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__wild_area.ics"
     }
 }

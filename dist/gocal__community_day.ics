@@ -1,17 +1,43 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
-NAME:GO Calendar - Community Day (CD)
-X-WR-CALNAME:GO Calendar - Community Day (CD)
-DESCRIPTION:All Pokémon GO Community Day events\, in your local time\, aut
- o-updated and sourced from Leek Duck.
-X-WR-CALDESC:All Pokémon GO Community Day events\, in your local time\, au
- to-updated and sourced from Leek Duck.
+NAME:GO Calendar - Community Day (CD) [Europe/London]
+X-WR-CALNAME:GO Calendar - Community Day (CD) [Europe/London]
+DESCRIPTION:All Pokémon GO Community Day events\, in Europe/London\, auto-
+ updated and sourced from Leek Duck.
+X-WR-CALDESC:All Pokémon GO Community Day events\, in Europe/London\, auto
+ -updated and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
+BEGIN:VTIMEZONE
+TZID:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:20260329T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20261025T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20270328T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+DTSTART:20251214T193423
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:september-communitydayclassic2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[CD] Gible Community Day Classic
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /september-communitydayclassic2026/
@@ -19,8 +45,8 @@ URL:https://leekduck.com/events/september-communitydayclassic2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
  026/2026-09-12-september-communitydayclassic2026/gible-community-day-class
  ic.jpg
-DTSTART:20260912T140000
-DTEND:20260912T170000
+DTSTART;TZID=Europe/London:20260912T140000
+DTEND;TZID=Europe/London:20260912T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[CD] Gible Community Day Classic
@@ -29,14 +55,14 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:october-communityday2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[CD] October Community Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /october-communityday2026/
 URL:https://leekduck.com/events/october-communityday2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/cd-default.jpg
-DTSTART:20261010T140000
-DTEND:20261010T170000
+DTSTART;TZID=Europe/London:20261010T140000
+DTEND;TZID=Europe/London:20261010T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[CD] October Community Day
@@ -45,14 +71,14 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[CD] November Community Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /november-communityday2026/
 URL:https://leekduck.com/events/november-communityday2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/cd-default.jpg
-DTSTART:20261121T140000
-DTEND:20261121T170000
+DTSTART;TZID=Europe/London:20261121T140000
+DTEND;TZID=Europe/London:20261121T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[CD] November Community Day

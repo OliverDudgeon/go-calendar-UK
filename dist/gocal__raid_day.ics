@@ -1,17 +1,43 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
-NAME:GO Calendar - Raid Day (RD)
-X-WR-CALNAME:GO Calendar - Raid Day (RD)
-DESCRIPTION:All Pokémon GO Raid Day events\, in your local time\, auto-upd
- ated and sourced from Leek Duck.
-X-WR-CALDESC:All Pokémon GO Raid Day events\, in your local time\, auto-up
- dated and sourced from Leek Duck.
+NAME:GO Calendar - Raid Day (RD) [Europe/London]
+X-WR-CALNAME:GO Calendar - Raid Day (RD) [Europe/London]
+DESCRIPTION:All Pokémon GO Raid Day events\, in Europe/London\, auto-updat
+ ed and sourced from Leek Duck.
+X-WR-CALDESC:All Pokémon GO Raid Day events\, in Europe/London\, auto-upda
+ ted and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
+BEGIN:VTIMEZONE
+TZID:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:20260329T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20261025T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20270328T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+DTSTART:20251214T193423
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:staraptor-super-mega-raid-day-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[RD] Staraptor Super Mega Raid Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /staraptor-super-mega-raid-day-2026/
@@ -19,8 +45,8 @@ URL:https://leekduck.com/events/staraptor-super-mega-raid-day-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
  026/2026-09-19-staraptor-super-mega-raid-day-2026/staraptor-super-mega-rai
  d-day-2026.jpg
-DTSTART:20260919T140000
-DTEND:20260919T170000
+DTSTART;TZID=Europe/London:20260919T140000
+DTEND;TZID=Europe/London:20260919T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[RD] Staraptor Super Mega Raid Day
@@ -29,15 +55,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:super-mega-raid-day-october-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[RD] Super Mega Raid Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /super-mega-raid-day-october-2026/
 URL:https://leekduck.com/events/super-mega-raid-day-october-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-i
  mg.jpg
-DTSTART:20261031T140000
-DTEND:20261031T170000
+DTSTART;TZID=Europe/London:20261031T140000
+DTEND;TZID=Europe/London:20261031T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[RD] Super Mega Raid Day
@@ -46,15 +72,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:super-mega-raid-day-november-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[RD] Super Mega Raid Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /super-mega-raid-day-november-2026/
 URL:https://leekduck.com/events/super-mega-raid-day-november-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-i
  mg.jpg
-DTSTART:20261128T140000
-DTEND:20261128T170000
+DTSTART;TZID=Europe/London:20261128T140000
+DTEND;TZID=Europe/London:20261128T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[RD] Super Mega Raid Day

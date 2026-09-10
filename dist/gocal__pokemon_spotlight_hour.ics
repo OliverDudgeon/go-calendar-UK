@@ -1,25 +1,51 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
-NAME:GO Calendar - Pokémon Spotlight Hour (PSH)
-X-WR-CALNAME:GO Calendar - Pokémon Spotlight Hour (PSH)
-DESCRIPTION:All Pokémon GO Pokémon Spotlight Hour events\, in your local 
- time\, auto-updated and sourced from Leek Duck.
-X-WR-CALDESC:All Pokémon GO Pokémon Spotlight Hour events\, in your local
-  time\, auto-updated and sourced from Leek Duck.
+NAME:GO Calendar - Pokémon Spotlight Hour (PSH) [Europe/London]
+X-WR-CALNAME:GO Calendar - Pokémon Spotlight Hour (PSH) [Europe/London]
+DESCRIPTION:All Pokémon GO Pokémon Spotlight Hour events\, in Europe/Lond
+ on\, auto-updated and sourced from Leek Duck.
+X-WR-CALDESC:All Pokémon GO Pokémon Spotlight Hour events\, in Europe/Lon
+ don\, auto-updated and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
+BEGIN:VTIMEZONE
+TZID:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:20260329T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20261025T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20270328T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+DTSTART:20251214T193423
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-10
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[PSH] Weedle\, Kakuna\, and Beedrill Spotlight Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /pokemonspotlighthour2026-09-10/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-10/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlight
  hour.jpg
-DTSTART:20260910T180000
-DTEND:20260910T190000
+DTSTART;TZID=Europe/London:20260910T180000
+DTEND;TZID=Europe/London:20260910T190000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[PSH] Weedle\, Kakuna\, and Beedrill Spotlight Hour
@@ -28,15 +54,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-13
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[PSH] Houndour and Houndoom Spotlight Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /pokemonspotlighthour2026-09-13/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-13/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlight
  hour.jpg
-DTSTART:20260913T180000
-DTEND:20260913T190000
+DTSTART;TZID=Europe/London:20260913T180000
+DTEND;TZID=Europe/London:20260913T190000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[PSH] Houndour and Houndoom Spotlight Hour
@@ -45,15 +71,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-17
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[PSH] Mystery Pokémon Spotlight Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /pokemonspotlighthour2026-09-17/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-17/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlight
  hour.jpg
-DTSTART:20260917T180000
-DTEND:20260917T190000
+DTSTART;TZID=Europe/London:20260917T180000
+DTEND;TZID=Europe/London:20260917T190000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[PSH] Mystery Pokémon Spotlight Hour
@@ -62,15 +88,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-24
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[PSH] Rattata Spotlight Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /pokemonspotlighthour2026-09-24/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-24/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/pokemonspotlight
  hour.jpg
-DTSTART:20260924T180000
-DTEND:20260924T190000
+DTSTART;TZID=Europe/London:20260924T180000
+DTEND;TZID=Europe/London:20260924T190000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[PSH] Rattata Spotlight Hour

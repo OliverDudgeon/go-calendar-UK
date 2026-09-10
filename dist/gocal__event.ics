@@ -1,17 +1,43 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
-NAME:GO Calendar - Event (E)
-X-WR-CALNAME:GO Calendar - Event (E)
-DESCRIPTION:All Pokémon GO Event events\, in your local time\, auto-update
- d and sourced from Leek Duck.
-X-WR-CALDESC:All Pokémon GO Event events\, in your local time\, auto-updat
- ed and sourced from Leek Duck.
+NAME:GO Calendar - Event (E) [Europe/London]
+X-WR-CALNAME:GO Calendar - Event (E) [Europe/London]
+DESCRIPTION:All Pokémon GO Event events\, in Europe/London\, auto-updated 
+ and sourced from Leek Duck.
+X-WR-CALDESC:All Pokémon GO Event events\, in Europe/London\, auto-updated
+  and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
+BEGIN:VTIMEZONE
+TZID:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:20260329T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20261025T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20270328T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+DTSTART:20251214T193423
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:mega-squads
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[E] Mega Squads
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /mega-squads/
@@ -28,7 +54,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-horizons-the-series-celebration-event-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[E] Pokémon Horizons: The Series Celebration Event
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /pokemon-horizons-the-series-celebration-event-2026/
@@ -47,15 +73,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:catch-mastery-phantump-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[E] Phantump Catch Mastery
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /catch-mastery-phantump-2026/
 URL:https://leekduck.com/events/catch-mastery-phantump-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
  026/2026-09-26-catch-mastery-phantump-2026/phantump-catch-mastery.jpg?v2
-DTSTART:20260926T100000
-DTEND:20260926T200000
+DTSTART;TZID=Europe/London:20260926T100000
+DTEND;TZID=Europe/London:20260926T200000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[E] Phantump Catch Mastery
@@ -64,7 +90,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lego-pokemon-go-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[E] LEGO Stores and Pokémon GO
 DESCRIPTION:Starts at 10:00\, ends at 23:59.\n\nhttps://leekduck.com/events
  /lego-pokemon-go-2026/
@@ -81,7 +107,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:harvest-festival-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[E] Harvest Festival 2026: Applin Picking
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /harvest-festival-2026/
@@ -98,7 +124,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:harvest-festival-taken-over-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[E] Harvest Festival: Taken Over
 DESCRIPTION:Starts at 00:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /harvest-festival-taken-over-2026/
@@ -116,15 +142,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hatch-day-october-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[E] Hatch Day
 DESCRIPTION:Starts at 11:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /hatch-day-october-2026/
 URL:https://leekduck.com/events/hatch-day-october-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-i
  mg.jpg
-DTSTART:20261017T110000
-DTEND:20261017T170000
+DTSTART;TZID=Europe/London:20261017T110000
+DTEND;TZID=Europe/London:20261017T170000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[E] Hatch Day

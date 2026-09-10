@@ -1,25 +1,51 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
-NAME:GO Calendar - Max Mondays (MM)
-X-WR-CALNAME:GO Calendar - Max Mondays (MM)
-DESCRIPTION:All Pokémon GO Max Mondays events\, in your local time\, auto-
- updated and sourced from Leek Duck.
-X-WR-CALDESC:All Pokémon GO Max Mondays events\, in your local time\, auto
- -updated and sourced from Leek Duck.
+NAME:GO Calendar - Max Mondays (MM) [Europe/London]
+X-WR-CALNAME:GO Calendar - Max Mondays (MM) [Europe/London]
+DESCRIPTION:All Pokémon GO Max Mondays events\, in Europe/London\, auto-up
+ dated and sourced from Leek Duck.
+X-WR-CALDESC:All Pokémon GO Max Mondays events\, in Europe/London\, auto-u
+ pdated and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
+BEGIN:VTIMEZONE
+TZID:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:20260329T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20261025T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20270328T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+DTSTART:20251214T193423
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:max-mondays-2026-09-14
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[MM] Dynamax Rhyhorn during Max Monday
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/events
  /max-mondays-2026-09-14/
 URL:https://leekduck.com/events/max-mondays-2026-09-14/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kant
  o.jpg
-DTSTART:20260914T060000
-DTEND:20260914T210000
+DTSTART;TZID=Europe/London:20260914T060000
+DTEND;TZID=Europe/London:20260914T210000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[MM] Dynamax Rhyhorn during Max Monday
@@ -28,15 +54,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-21
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[MM] Dynamax Articuno\, Zapdos\, and Moltres during Max Monday
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/events
  /max-mondays-2026-09-21/
 URL:https://leekduck.com/events/max-mondays-2026-09-21/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kant
  o.jpg
-DTSTART:20260921T060000
-DTEND:20260921T210000
+DTSTART;TZID=Europe/London:20260921T060000
+DTEND;TZID=Europe/London:20260921T210000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[MM] Dynamax Articuno\, Zapdos\, and Moltres during Max Monday
@@ -45,15 +71,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-28
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[MM] Dynamax Sobble during Max Monday
 DESCRIPTION:Starts at 06:00\, ends at 21:00.\n\nhttps://leekduck.com/events
  /max-mondays-2026-09-28/
 URL:https://leekduck.com/events/max-mondays-2026-09-28/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/max-battles-kant
  o.jpg
-DTSTART:20260928T060000
-DTEND:20260928T210000
+DTSTART;TZID=Europe/London:20260928T060000
+DTEND;TZID=Europe/London:20260928T210000
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[MM] Dynamax Sobble during Max Monday

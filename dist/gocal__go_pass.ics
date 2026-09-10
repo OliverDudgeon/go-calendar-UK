@@ -1,17 +1,17 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
-NAME:GO Calendar - GO Pass (GP)
-X-WR-CALNAME:GO Calendar - GO Pass (GP)
-DESCRIPTION:All Pokémon GO GO Pass events\, in your local time\, auto-upda
- ted and sourced from Leek Duck.
-X-WR-CALDESC:All Pokémon GO GO Pass events\, in your local time\, auto-upd
- ated and sourced from Leek Duck.
+NAME:GO Calendar - GO Pass (GP) [Europe/London]
+X-WR-CALNAME:GO Calendar - GO Pass (GP) [Europe/London]
+DESCRIPTION:All Pokémon GO GO Pass events\, in Europe/London\, auto-update
+ d and sourced from Leek Duck.
+X-WR-CALDESC:All Pokémon GO GO Pass events\, in Europe/London\, auto-updat
+ ed and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
 UID:go-pass-september-2026
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[GP] GO Pass: September
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/events
  /go-pass-september-2026/

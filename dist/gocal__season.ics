@@ -1,17 +1,17 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
-NAME:GO Calendar - Season (S)
-X-WR-CALNAME:GO Calendar - Season (S)
-DESCRIPTION:All Pokémon GO Season events\, in your local time\, auto-updat
- ed and sourced from Leek Duck.
-X-WR-CALDESC:All Pokémon GO Season events\, in your local time\, auto-upda
- ted and sourced from Leek Duck.
+NAME:GO Calendar - Season (S) [Europe/London]
+X-WR-CALNAME:GO Calendar - Season (S) [Europe/London]
+DESCRIPTION:All Pokémon GO Season events\, in Europe/London\, auto-updated
+  and sourced from Leek Duck.
+X-WR-CALDESC:All Pokémon GO Season events\, in Europe/London\, auto-update
+ d and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
 BEGIN:VEVENT
 UID:season-24-twilight-trails
-DTSTAMP:20260910T035916Z
+DTSTAMP:20260910T193423Z
 SUMMARY:[S] Twilight Trails
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/events
  /season-24-twilight-trails/
