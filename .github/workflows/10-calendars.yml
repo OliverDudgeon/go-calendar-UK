@@ -11,6 +11,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -35,8 +38,11 @@ jobs:
       - name: Install PHP dependencies
         run: composer install
 
-      - name: Run iCal's build
-        run: bin/gocal gen
+      - name: Test calendar time zones
+        run: composer test
+
+      - name: Generate UK calendars
+        run: bin/gocal gen --timezone=Europe/London
         continue-on-error: false
 
       - name: Don't Commit composer.json change
@@ -45,5 +51,6 @@ jobs:
       - name: Commit any changes back to the repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
+          file_pattern: 'dist/*.ics dist/manifest.json'
           commit_message: "[GitHub Actions Bot: Publish iCal's Update]"
           commit_author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>

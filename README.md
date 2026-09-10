@@ -86,9 +86,24 @@ The calendar name includes `[Europe/London]` to distinguish the UK feed.
 
 Output uses the existing `dist/` filenames. Host these files at your own URL and
 subscribe to that URL in Morgen. The upstream `othyn/go-calendar` release URL
-continues to serve the global feed. For an automated UK fork, add
-`--timezone=Europe/London` to the generation command in its calendar workflow;
-configure its hosting/manifest links for that fork before publishing.
+continues to serve the global feed. This fork's generation workflow already uses
+`--timezone=Europe/London`, runs the regression checks, and commits only the generated calendars and manifest.
+Its manifest links point to this fork's raw files.
+
+After pushing these changes, open the fork's **Actions** tab and enable workflows.
+GitHub disables workflows in new forks by default; the owner can enable them.
+Run **Generate Calendars → Run workflow** once on `main`. After it succeeds,
+subscribe in Morgen to:
+
+```text
+https://raw.githubusercontent.com/OliverDudgeon/go-calendar-UK/main/dist/gocal.ics
+```
+
+The workflow then updates the feed daily. Its explicit `contents: write`
+permission allows the built-in GitHub token to commit the output; no personal
+token or GitHub Pages setup is needed. The inherited website and release
+workflows are manual-only and are not needed for this subscription.
+See [GitHub's fork workflow documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflows-in-forked-repositories).
 
 Omitting `--timezone` preserves the existing global floating-time behavior.
 A UK feed describes UK instants, so users elsewhere may see different local times.

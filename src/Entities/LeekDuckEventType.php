@@ -16,7 +16,7 @@ class LeekDuckEventType
     /**
      * The base download URL to the hosted ICS assets.
      */
-    public const BASE_DOWNLOAD_URL = 'github.com/othyn/go-calendar/releases/latest/download/';
+    public const BASE_DOWNLOAD_URL = 'raw.githubusercontent.com/OliverDudgeon/go-calendar-UK/main/dist/';
 
     public function __construct(
         public string $key,
