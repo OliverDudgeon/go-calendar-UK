@@ -30,14 +30,14 @@ END:VTIMEZONE
 BEGIN:VTIMEZONE
 TZID:UTC
 BEGIN:STANDARD
-DTSTART:20251217T040015
+DTSTART:20251218T040820
 TZOFFSETFROM:+0000
 TZOFFSETTO:+0000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-13
-DTSTAMP:20260913T040015Z
+DTSTAMP:20260914T040820Z
 SUMMARY:[PSH] Houndour and Houndoom Spotlight Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /pokemonspotlighthour2026-09-13/
@@ -54,8 +54,8 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-17
-DTSTAMP:20260913T040015Z
-SUMMARY:[PSH] Mystery Pokémon Spotlight Hour
+DTSTAMP:20260914T040820Z
+SUMMARY:[PSH] Charmander wearing Friede's goggles Spotlight Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /pokemonspotlighthour2026-09-17/
 URL:https://leekduck.com/events/pokemonspotlighthour2026-09-17/
@@ -65,13 +65,13 @@ DTSTART;TZID=Europe/London:20260917T180000
 DTEND;TZID=Europe/London:20260917T190000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[PSH] Mystery Pokémon Spotlight Hour
+DESCRIPTION:[PSH] Charmander wearing Friede's goggles Spotlight Hour
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-24
-DTSTAMP:20260913T040015Z
+DTSTAMP:20260914T040820Z
 SUMMARY:[PSH] Rattata Spotlight Hour
 DESCRIPTION:Starts at 18:00\, ends at 19:00.\n\nhttps://leekduck.com/events
  /pokemonspotlighthour2026-09-24/
