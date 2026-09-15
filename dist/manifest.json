@@ -1,4 +1,8 @@
 {
+    "choose_your_path": {
+        "name": "Choose Your Path",
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__choose_your_path.ics"
+    },
     "community_day": {
         "name": "Community Day",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__community_day.ics"
