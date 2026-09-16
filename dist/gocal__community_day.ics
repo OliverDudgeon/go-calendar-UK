@@ -30,30 +30,31 @@ END:VTIMEZONE
 BEGIN:VTIMEZONE
 TZID:UTC
 BEGIN:STANDARD
-DTSTART:20251219T040729
+DTSTART:20251220T040412
 TZOFFSETFROM:+0000
 TZOFFSETTO:+0000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:october-communityday2026
-DTSTAMP:20260915T040729Z
-SUMMARY:[CD] October Community Day
+DTSTAMP:20260916T040412Z
+SUMMARY:[CD] Zorua Community Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /october-communityday2026/
 URL:https://leekduck.com/events/october-communityday2026/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/cd-default.jpg
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
+ 026/2026-10-10-october-communityday2026/zorua-october-cd-2026.png
 DTSTART;TZID=Europe/London:20261010T140000
 DTEND;TZID=Europe/London:20261010T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CD] October Community Day
+DESCRIPTION:[CD] Zorua Community Day
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2026
-DTSTAMP:20260915T040729Z
+DTSTAMP:20260916T040412Z
 SUMMARY:[CD] November Community Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /november-communityday2026/
