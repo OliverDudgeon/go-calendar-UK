@@ -47,10 +47,6 @@
         "name": "Raid Hour",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__raid_hour.ics"
     },
-    "research": {
-        "name": "Research",
-        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__research.ics"
-    },
     "season": {
         "name": "Season",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__season.ics"
