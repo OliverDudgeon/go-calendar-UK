@@ -1,65 +1,127 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:spatie/icalendar-generator
-NAME:GO Calendar - City Safari (CS)
-X-WR-CALNAME:GO Calendar - City Safari (CS)
-DESCRIPTION:All Pokémon GO City Safari events\, in your local time\, auto-
- updated and sourced from Leek Duck.
-X-WR-CALDESC:All Pokémon GO City Safari events\, in your local time\, auto
- -updated and sourced from Leek Duck.
+NAME:GO Calendar - City Safari (CS) [Europe/London]
+X-WR-CALNAME:GO Calendar - City Safari (CS) [Europe/London]
+DESCRIPTION:All Pokémon GO City Safari events\, in Europe/London\, auto-up
+ dated and sourced from Leek Duck.
+X-WR-CALDESC:All Pokémon GO City Safari events\, in Europe/London\, auto-u
+ pdated and sourced from Leek Duck.
 REFRESH-INTERVAL;VALUE=DURATION:PT1440M
 X-PUBLISHED-TTL:PT1440M
+BEGIN:VTIMEZONE
+TZID:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:20260329T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20261025T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20270328T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+DTSTART:20251231T043111
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
-UID:pokemon-go-city-safari-sydney-2025
-DTSTAMP:20251215T003426Z
-SUMMARY:[CS] Sydney\, Australia - Pokémon GO City Safari
-DESCRIPTION:Starts at 23:00\, ends at 07:00.\n\nhttps://leekduck.com/events
- /pokemon-go-city-safari-sydney-2025/
-URL:https://leekduck.com/events/pokemon-go-city-safari-sydney-2025/
+UID:pokemon-go-city-safari-brisbane-2026
+DTSTAMP:20260927T043111Z
+SUMMARY:[CS] Brisbane\, Australia - Pokémon GO City Safari
+DESCRIPTION:Starts at 01:00\, ends at 09:00.\n\nhttps://leekduck.com/events
+ /pokemon-go-city-safari-brisbane-2026/
+URL:https://leekduck.com/events/pokemon-go-city-safari-brisbane-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
- 025/2025-12-13-pokemon-go-city-safari-sydney-2025/city-safari-sydney-2025.
- jpg?v2
-DTSTART;VALUE=DATE:20251212
-DTEND;VALUE=DATE:20251214
+ 026/2026-09-26-pokemon-go-city-safari-brisbane-2026/city-safari-brisbane-2
+ 026.jpg
+DTSTART;TZID=Europe/London:20260926T010000
+DTEND;TZID=Europe/London:20260927T090000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS] Sydney\, Australia - Pokémon GO City Safari
+DESCRIPTION:[CS] Brisbane\, Australia - Pokémon GO City Safari
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:pokemon-go-city-safari-buenos-aires-2025
-DTSTAMP:20251215T003426Z
-SUMMARY:[CS] Buenos Aires\, Argentina - Pokémon GO City Safari
-DESCRIPTION:Starts at 13:00\, ends at 21:00.\n\nhttps://leekduck.com/events
- /pokemon-go-city-safari-buenos-aires-2025/
-URL:https://leekduck.com/events/pokemon-go-city-safari-buenos-aires-2025/
+UID:pokemon-go-city-safari-marseille-2026
+DTSTAMP:20260927T043111Z
+SUMMARY:[CS] Marseille\, France - Pokémon GO City Safari
+DESCRIPTION:Starts at 09:00\, ends at 17:00.\n\nhttps://leekduck.com/events
+ /pokemon-go-city-safari-marseille-2026/
+URL:https://leekduck.com/events/pokemon-go-city-safari-marseille-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
- 025/2025-12-13-pokemon-go-city-safari-buenos-aires-2025/city-safari-buenos
- -aires-2025.jpg?v2
-DTSTART;VALUE=DATE:20251213
-DTEND;VALUE=DATE:20251214
+ 026/2026-09-26-pokemon-go-city-safari-marseille-2026/city-safari-marseille
+ -2026.jpg
+DTSTART;TZID=Europe/London:20260926T090000
+DTEND;TZID=Europe/London:20260927T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS] Buenos Aires\, Argentina - Pokémon GO City Safari
+DESCRIPTION:[CS] Marseille\, France - Pokémon GO City Safari
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:pokemon-go-city-safari-miami-2025
-DTSTAMP:20251215T003426Z
-SUMMARY:[CS] Miami\, USA - Pokémon GO City Safari
-DESCRIPTION:Starts at 15:00\, ends at 23:00.\n\nhttps://leekduck.com/events
- /pokemon-go-city-safari-miami-2025/
-URL:https://leekduck.com/events/pokemon-go-city-safari-miami-2025/
+UID:pokemon-go-city-safari-munich-2026
+DTSTAMP:20260927T043111Z
+SUMMARY:[CS] Munich\, Germany - Pokémon GO City Safari
+DESCRIPTION:Starts at 09:00\, ends at 17:00.\n\nhttps://leekduck.com/events
+ /pokemon-go-city-safari-munich-2026/
+URL:https://leekduck.com/events/pokemon-go-city-safari-munich-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
- 025/2025-12-13-pokemon-go-city-safari-miami-2025/city-safari-miami-2025.jp
- g?v2
-DTSTART;VALUE=DATE:20251213
-DTEND;VALUE=DATE:20251214
+ 026/2026-09-26-pokemon-go-city-safari-munich-2026/city-safari-munich-2026.
+ jpg
+DTSTART;TZID=Europe/London:20260926T090000
+DTEND;TZID=Europe/London:20260927T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS] Miami\, USA - Pokémon GO City Safari
+DESCRIPTION:[CS] Munich\, Germany - Pokémon GO City Safari
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemon-go-city-safari-lisbon-2026
+DTSTAMP:20260927T043111Z
+SUMMARY:[CS] Lisbon\, Portugal - Pokémon GO City Safari
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/events
+ /pokemon-go-city-safari-lisbon-2026/
+URL:https://leekduck.com/events/pokemon-go-city-safari-lisbon-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
+ 026/2026-09-26-pokemon-go-city-safari-lisbon-2026/city-safari-lisbon-2026.
+ jpg
+DTSTART;TZID=Europe/London:20260926T100000
+DTEND;TZID=Europe/London:20260927T180000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[CS] Lisbon\, Portugal - Pokémon GO City Safari
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemon-go-city-safari-rio-de-janeiro-2026
+DTSTAMP:20260927T043111Z
+SUMMARY:[CS] Rio de Janeiro\, Brazil - Pokémon GO City Safari
+DESCRIPTION:Starts at 14:00\, ends at 22:00.\n\nhttps://leekduck.com/events
+ /pokemon-go-city-safari-rio-de-janeiro-2026/
+URL:https://leekduck.com/events/pokemon-go-city-safari-rio-de-janeiro-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
+ 026/2026-09-26-pokemon-go-city-safari-rio-de-janeiro-2026/city-safari-rio-
+ de-janeiro-2026.jpg
+DTSTART;TZID=Europe/London:20260926T140000
+DTEND;TZID=Europe/London:20260927T220000
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[CS] Rio de Janeiro\, Brazil - Pokémon GO City Safari
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
