@@ -55,6 +55,10 @@
         "name": "Season",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__season.ics"
     },
+    "twitch_drops": {
+        "name": "Twitch Drops",
+        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__twitch_drops.ics"
+    },
     "wild_area": {
         "name": "Wild Area",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__wild_area.ics"
