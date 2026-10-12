@@ -30,31 +30,14 @@ END:VTIMEZONE
 BEGIN:VTIMEZONE
 TZID:UTC
 BEGIN:STANDARD
-DTSTART:20260114T045513
+DTSTART:20260115T050947
 TZOFFSETFROM:+0000
 TZOFFSETTO:+0000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:world-space-week-2026
-DTSTAMP:20261011T045513Z
-SUMMARY:[E] World Space Week 2026
-DESCRIPTION:Starts at 00:00\, ends at 23:59.\n\nhttps://leekduck.com/events
- /world-space-week-2026/
-URL:https://leekduck.com/events/world-space-week-2026/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
- 026/2026-10-04-world-space-week-2026/world-space-week-2026.jpg
-DTSTART;VALUE=DATE:20261004
-DTEND;VALUE=DATE:20261011
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[E] World Space Week 2026
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:sandile-hatch-day-2026
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Sandile Hatch Day
 DESCRIPTION:Starts at 11:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /sandile-hatch-day-2026/
@@ -71,7 +54,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:fall-marathon-buddy-trek-2026
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Fall Marathon: Buddy Trek
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /fall-marathon-buddy-trek-2026/
@@ -89,7 +72,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-tcg-30th-celebration
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Pokémon TCG: 30th Celebration
 DESCRIPTION:Starts at 10:00\, ends at 22:00.\n\nhttps://leekduck.com/events
  /pokemon-tcg-30th-celebration/
@@ -107,7 +90,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-orionids-2026
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Minior Showers: Orionids 2026
 DESCRIPTION:Starts at 17:00\, ends at 23:59.\n\nhttps://leekduck.com/events
  /minior-showers-orionids-2026/
@@ -124,7 +107,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:halloween-2026-part-1
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Pokémon GO Halloween 2026 Part I
 DESCRIPTION:Starts at 10:00\, ends at 10:00.\n\nhttps://leekduck.com/events
  /halloween-2026-part-1/
@@ -141,7 +124,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:halloween-2026-part-2
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Pokémon GO Halloween 2026 Part II
 DESCRIPTION:Starts at 10:00\, ends at 20:00.\n\nhttps://leekduck.com/events
  /halloween-2026-part-2/
@@ -158,7 +141,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-leonids-2026
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Minior Showers: Leonids 2026
 DESCRIPTION:Starts at 17:00\, ends at 23:59.\n\nhttps://leekduck.com/events
  /minior-showers-leonids-2026/
@@ -175,7 +158,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-geminids-2026
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Minior Showers: Geminids 2026
 DESCRIPTION:Starts at 17:00\, ends at 23:59.\n\nhttps://leekduck.com/events
  /minior-showers-geminids-2026/
@@ -192,7 +175,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-eta-aquariids-2027
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Minior Showers: Eta Aquariids 2027
 DESCRIPTION:Starts at 17:00\, ends at 23:59.\n\nhttps://leekduck.com/events
  /minior-showers-eta-aquariids-2027/
@@ -209,7 +192,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-southern-delta-aquariids-2027
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Minior Showers: Southern Delta Aquariids 2027
 DESCRIPTION:Starts at 17:00\, ends at 23:59.\n\nhttps://leekduck.com/events
  /minior-showers-southern-delta-aquariids-2027/
@@ -227,7 +210,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-perseids-2027
-DTSTAMP:20261011T045513Z
+DTSTAMP:20261012T050947Z
 SUMMARY:[E] Minior Showers: Perseids 2027
 DESCRIPTION:Starts at 17:00\, ends at 23:59.\n\nhttps://leekduck.com/events
  /minior-showers-perseids-2027/
