@@ -30,31 +30,31 @@ END:VTIMEZONE
 BEGIN:VTIMEZONE
 TZID:UTC
 BEGIN:STANDARD
-DTSTART:20260116T060858
+DTSTART:20260117T041137
 TZOFFSETFROM:+0000
 TZOFFSETTO:+0000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:super-mega-raid-day-october-2026
-DTSTAMP:20261013T060858Z
-SUMMARY:[RD] Super Mega Raid Day
+UID:chandelure-super-mega-raid-day-2026
+DTSTAMP:20261014T041137Z
+SUMMARY:[RD] Chandelure Super Mega Raid Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
- /super-mega-raid-day-october-2026/
-URL:https://leekduck.com/events/super-mega-raid-day-october-2026/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/events-default-i
- mg.jpg
+ /chandelure-super-mega-raid-day-2026/
+URL:https://leekduck.com/events/chandelure-super-mega-raid-day-2026/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/chandelure-super
+ -mega-raid-day-2026.jpg
 DTSTART;TZID=Europe/London:20261031T140000
 DTEND;TZID=Europe/London:20261031T170000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[RD] Super Mega Raid Day
+DESCRIPTION:[RD] Chandelure Super Mega Raid Day
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:super-mega-raid-day-november-2026
-DTSTAMP:20261013T060858Z
+DTSTAMP:20261014T041137Z
 SUMMARY:[RD] Super Mega Raid Day
 DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
  /super-mega-raid-day-november-2026/
