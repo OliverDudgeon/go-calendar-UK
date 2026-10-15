@@ -30,26 +30,26 @@ END:VTIMEZONE
 BEGIN:VTIMEZONE
 TZID:UTC
 BEGIN:STANDARD
-DTSTART:20260101T043301
+DTSTART:20260118T035434
 TZOFFSETFROM:+0000
 TZOFFSETTO:+0000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:pokemon-go-city-safari-rio-de-janeiro-2026
-DTSTAMP:20260928T043301Z
-SUMMARY:[CS] Rio de Janeiro\, Brazil - Pokémon GO City Safari
-DESCRIPTION:Starts at 14:00\, ends at 22:00.\n\nhttps://leekduck.com/events
- /pokemon-go-city-safari-rio-de-janeiro-2026/
-URL:https://leekduck.com/events/pokemon-go-city-safari-rio-de-janeiro-2026/
-IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
- 026/2026-09-26-pokemon-go-city-safari-rio-de-janeiro-2026/city-safari-rio-
- de-janeiro-2026.jpg
-DTSTART;TZID=Europe/London:20260926T140000
-DTEND;TZID=Europe/London:20260927T220000
+UID:pokemon-go-city-safari-boston-2026-rescheduled
+DTSTAMP:20261015T035434Z
+SUMMARY:[CS] Pokémon GO City Safari: Boston (Rescheduled)
+DESCRIPTION:Starts at 10:00\, ends at 18:00.\n\nhttps://leekduck.com/events
+ /pokemon-go-city-safari-boston-2026-rescheduled/
+URL:https://leekduck.com/events/pokemon-go-city-safari-boston-2026-reschedu
+ led/
+IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/city-safari-bost
+ on-2026.jpg
+DTSTART;TZID=Europe/London:20261024T100000
+DTEND;TZID=Europe/London:20261025T180000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[CS] Rio de Janeiro\, Brazil - Pokémon GO City Safari
+DESCRIPTION:[CS] Pokémon GO City Safari: Boston (Rescheduled)
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
