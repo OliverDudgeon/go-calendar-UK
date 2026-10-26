@@ -23,10 +23,6 @@
         "name": "GO Pass",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__go_pass.ics"
     },
-    "max_battles": {
-        "name": "Max Battles",
-        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__max_battles.ics"
-    },
     "max_mondays": {
         "name": "Max Mondays",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__max_mondays.ics"
@@ -58,10 +54,6 @@
     "season": {
         "name": "Season",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__season.ics"
-    },
-    "twitch_drops": {
-        "name": "Twitch Drops",
-        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__twitch_drops.ics"
     },
     "wild_area": {
         "name": "Wild Area",
