@@ -30,27 +30,25 @@ END:VTIMEZONE
 BEGIN:VTIMEZONE
 TZID:UTC
 BEGIN:STANDARD
-DTSTART:20260128T035432
+DTSTART:20260201T050013
 TZOFFSETFROM:+0000
 TZOFFSETTO:+0000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:dynamax-uxie-mesprit-azelf-max-battle-day-2026
-DTSTAMP:20261025T035432Z
-SUMMARY:[MB] Dynamax Uxie\, Mesprit\, and Azelf Max Battle Day
-DESCRIPTION:Starts at 14:00\, ends at 17:00.\n\nhttps://leekduck.com/events
- /dynamax-uxie-mesprit-azelf-max-battle-day-2026/
-URL:https://leekduck.com/events/dynamax-uxie-mesprit-azelf-max-battle-day-2
- 026/
+UID:eternamax-eternatus-max-battles-2026
+DTSTAMP:20261029T050013Z
+SUMMARY:[MB] Eternamax Eternatus Returns
+DESCRIPTION:Starts at 11:00\, ends at 14:00.\n\nhttps://leekduck.com/events
+ /eternamax-eternatus-max-battles-2026/
+URL:https://leekduck.com/events/eternamax-eternatus-max-battles-2026/
 IMAGE;VALUE=URI:https://cdn.leekduck.com/assets/img/events/article-images/2
- 026/2026-10-24-dynamax-uxie-mesprit-azelf-max-battle-day-2026/dynamax-uxie
- -mesprit-azelf-max-battle-day.jpg
-DTSTART;TZID=Europe/London:20261024T140000
-DTEND;TZID=Europe/London:20261024T170000
+ 026/2026-11-16-dynamax-trails-2026/dynamax-trails-2026.jpg
+DTSTART;TZID=Europe/London:20261121T110000
+DTEND;TZID=Europe/London:20261121T140000
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:[MB] Dynamax Uxie\, Mesprit\, and Azelf Max Battle Day
+DESCRIPTION:[MB] Eternamax Eternatus Returns
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
