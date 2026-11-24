@@ -58,9 +58,5 @@
     "timed_research": {
         "name": "Timed Research",
         "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__timed_research.ics"
-    },
-    "twitch_drops": {
-        "name": "Twitch Drops",
-        "url": "raw.githubusercontent.com\/OliverDudgeon\/go-calendar-UK\/main\/dist\/gocal__twitch_drops.ics"
     }
 }
